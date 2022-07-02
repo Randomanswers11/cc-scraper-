@@ -1,0 +1,27 @@
+{
+    "name": "cc scraper",
+    "description": "A Program that generates and checks Stripe keys 24x7. This was made only for Educational Purposes, I'm not responsible for the damages cause by you",
+    "keywords": [
+        "telegram",
+        "stripe",
+        "checker"
+    ],
+    "repository": "https://github.com/Randomanswers11/cc-scraper-",
+    "env": {
+        "FORWARD_ID": {
+            "description": "Your UserID/Chat ID to forward live sk keys to",
+            "required": true,
+            "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "Bot token, get it from @BotFather.",
+            "required": true,
+            "value": ""
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
